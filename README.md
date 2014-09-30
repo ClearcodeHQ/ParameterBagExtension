@@ -114,7 +114,7 @@ class AnotherFeatureContext implements SnippetAcceptingContext
          * $message = 'User USER_ID is active'
          * and placeholder bag contains value 123 under key USER_ID
          */
-        $this->getParameterBag()->replace($message)
+        $message = $this->getParameterBag()->replace($message)
 
         // $message = 'User 123 is active'
     }
